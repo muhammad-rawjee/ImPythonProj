@@ -3,6 +3,7 @@ import sys
 import random
 
 def main():
+    """Choose names at random from 2 tuples of names and print on screen"""
     print("Welcome to the Psych 'Sidekick Name Picker.'\n")
     print("A name just like Sean would pick for Gus:\n\n")
 
@@ -38,11 +39,11 @@ def main():
             'Woolysocks')
 
     while True:
-        firstName = random.choice(first)
-        lastName = random.choice(last)
+        first_name = random.choice(first)
+        last_name = random.choice(last)
 
         print("\n\n")
-        print(f"{firstName} {lastName}", file=sys.stderr)
+        print(f"{first_name} {last_name}", file=sys.stderr)
         print("\n\n")
 
         try_again = input("\n\nTry Again? (Press Enter else n to quit)\n")
